@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Result</title>
+    <style>
+      body {
+        background-image: url("/static/pic.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fefbfb;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        {% if result == "Violence" %} Crime activity detected. Frames are sent
+        to your mail. Check your mail. {% else %} No Crime Activity is detected.
+        {% endif %}
+      </p>
+    </div>
+  </body>
+</html>
